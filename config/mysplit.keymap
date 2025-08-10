@@ -1,0 +1,17 @@
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            // 6 rows × 7 cols (row-major). Fill the spots you don't use with &none.
+            bindings = <
+                &kp Q     &kp W     &kp E     &kp R     &kp T     &none     &none
+                &kp A     &kp S     &kp D     &kp F     &kp G     &none     &none
+                &kp Z     &kp X     &kp C     &kp V     &kp B     &kp LSHFT &none
+                &kp N1    &kp N2    &kp N3    &none     &none     &none     &none
+                &kp SPACE &kp ENTER &kp TAB   &kp BSPC  &none     &none     &none
+                &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &none     &none     &none
+            >;
+        };
+    };
+};
